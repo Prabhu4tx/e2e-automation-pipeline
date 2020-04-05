@@ -5,7 +5,7 @@ node {
     }
     stage('Smoke') {
         try {
-            sh "mvn clean verify -Dtags='type:Smoke'"
+            sh "maven clean verify -Dtags='type:Smoke'"
         } catch (err) {
 
         } finally {
